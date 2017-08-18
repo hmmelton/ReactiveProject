@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+struct User {
+    var id: Int
+    var name: String
+    var username: String
+    var email: String
+}
+
+struct Album {
+    var userId: Int
+    var id: Int
+    var title: String
+}

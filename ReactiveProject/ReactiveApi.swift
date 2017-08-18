@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import ReactiveJSON
+
+/*
+ * This struct allows for interaction with the JSONPlaceholder API.
+ */
+struct ReactiveApi: Singleton, ServiceHost {
+    // Singleton
+    private(set) static var shared = Instance()
+    typealias Instance = ReactiveApi
+    
+    // ServiceHost
+    static var scheme: String { return "http" }
+    static var host: String { return "jsonplaceholder.typicode.com" }
+    static var path: String? { return nil }
+}

@@ -14,6 +14,15 @@
 		579F63B91F44B25A00250EAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 579F63B71F44B25A00250EAD /* LaunchScreen.storyboard */; };
 		579F63C41F44B25A00250EAD /* ReactiveProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F63C31F44B25A00250EAD /* ReactiveProjectTests.swift */; };
 		579F63CF1F44B25A00250EAD /* ReactiveProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F63CE1F44B25A00250EAD /* ReactiveProjectUITests.swift */; };
+		579F63E01F44B4A900250EAD /* ReactiveJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579F63DD1F44B4A900250EAD /* ReactiveJSON.framework */; };
+		579F63E11F44B4A900250EAD /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579F63DE1F44B4A900250EAD /* ReactiveSwift.framework */; };
+		579F63E21F44B4A900250EAD /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579F63DF1F44B4A900250EAD /* Result.framework */; };
+		579F63E51F44BAF700250EAD /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F63E41F44BAF700250EAD /* Models.swift */; };
+		579F63E81F44D78900250EAD /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579F63E61F44D78900250EAD /* Alamofire.framework */; };
+		579F63E91F44D78900250EAD /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 579F63E71F44D78900250EAD /* AlamofireImage.framework */; };
+		579F63EB1F44DFAD00250EAD /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F63EA1F44DFAD00250EAD /* AlbumDetailViewController.swift */; };
+		579F63EE1F44F2C300250EAD /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F63ED1F44F2C300250EAD /* UserDetailViewController.swift */; };
+		579F63F01F45BE0100250EAD /* ReactiveApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579F63EF1F45BE0100250EAD /* ReactiveApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,15 @@
 		579F63CA1F44B25A00250EAD /* ReactiveProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		579F63CE1F44B25A00250EAD /* ReactiveProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveProjectUITests.swift; sourceTree = "<group>"; };
 		579F63D01F44B25A00250EAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		579F63DD1F44B4A900250EAD /* ReactiveJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveJSON.framework; path = Carthage/Build/iOS/ReactiveJSON.framework; sourceTree = "<group>"; };
+		579F63DE1F44B4A900250EAD /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		579F63DF1F44B4A900250EAD /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		579F63E41F44BAF700250EAD /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		579F63E61F44D78900250EAD /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		579F63E71F44D78900250EAD /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		579F63EA1F44DFAD00250EAD /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
+		579F63ED1F44F2C300250EAD /* UserDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		579F63EF1F45BE0100250EAD /* ReactiveApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579F63E01F44B4A900250EAD /* ReactiveJSON.framework in Frameworks */,
+				579F63E11F44B4A900250EAD /* ReactiveSwift.framework in Frameworks */,
+				579F63E21F44B4A900250EAD /* Result.framework in Frameworks */,
+				579F63E81F44D78900250EAD /* Alamofire.framework in Frameworks */,
+				579F63E91F44D78900250EAD /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +104,7 @@
 				579F63C21F44B25A00250EAD /* ReactiveProjectTests */,
 				579F63CD1F44B25A00250EAD /* ReactiveProjectUITests */,
 				579F63AC1F44B25A00250EAD /* Products */,
+				579F63DC1F44B4A900250EAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +121,13 @@
 		579F63AD1F44B25A00250EAD /* ReactiveProject */ = {
 			isa = PBXGroup;
 			children = (
-				579F63AE1F44B25A00250EAD /* AppDelegate.swift */,
+				579F63EC1F44DFC100250EAD /* Supplementary Files */,
 				579F63B01F44B25A00250EAD /* ViewController.swift */,
+				579F63EA1F44DFAD00250EAD /* AlbumDetailViewController.swift */,
+				579F63ED1F44F2C300250EAD /* UserDetailViewController.swift */,
 				579F63B21F44B25A00250EAD /* Main.storyboard */,
-				579F63B51F44B25A00250EAD /* Assets.xcassets */,
-				579F63B71F44B25A00250EAD /* LaunchScreen.storyboard */,
-				579F63BA1F44B25A00250EAD /* Info.plist */,
+				579F63E41F44BAF700250EAD /* Models.swift */,
+				579F63EF1F45BE0100250EAD /* ReactiveApi.swift */,
 			);
 			path = ReactiveProject;
 			sourceTree = "<group>";
@@ -125,6 +150,29 @@
 			path = ReactiveProjectUITests;
 			sourceTree = "<group>";
 		};
+		579F63DC1F44B4A900250EAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				579F63E61F44D78900250EAD /* Alamofire.framework */,
+				579F63E71F44D78900250EAD /* AlamofireImage.framework */,
+				579F63DD1F44B4A900250EAD /* ReactiveJSON.framework */,
+				579F63DE1F44B4A900250EAD /* ReactiveSwift.framework */,
+				579F63DF1F44B4A900250EAD /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		579F63EC1F44DFC100250EAD /* Supplementary Files */ = {
+			isa = PBXGroup;
+			children = (
+				579F63AE1F44B25A00250EAD /* AppDelegate.swift */,
+				579F63B51F44B25A00250EAD /* Assets.xcassets */,
+				579F63B71F44B25A00250EAD /* LaunchScreen.storyboard */,
+				579F63BA1F44B25A00250EAD /* Info.plist */,
+			);
+			name = "Supplementary Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +183,7 @@
 				579F63A71F44B25A00250EAD /* Sources */,
 				579F63A81F44B25A00250EAD /* Frameworks */,
 				579F63A91F44B25A00250EAD /* Resources */,
+				579F63E31F44B97700250EAD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -254,12 +303,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		579F63E31F44B97700250EAD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		579F63A71F44B25A00250EAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				579F63E51F44BAF700250EAD /* Models.swift in Sources */,
+				579F63EE1F44F2C300250EAD /* UserDetailViewController.swift in Sources */,
 				579F63B11F44B25A00250EAD /* ViewController.swift in Sources */,
+				579F63F01F45BE0100250EAD /* ReactiveApi.swift in Sources */,
+				579F63EB1F44DFAD00250EAD /* AlbumDetailViewController.swift in Sources */,
 				579F63AF1F44B25A00250EAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +488,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReactiveProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hmmelton.ReactiveProject;
@@ -426,6 +504,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReactiveProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hmmelton.ReactiveProject;

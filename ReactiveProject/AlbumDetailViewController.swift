@@ -8,26 +8,46 @@
 
 import UIKit
 import AlamofireImage
+import ReactiveSwift
+import ReactiveJSON
+import Result
 
 class AlbumDetailViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     // Properties
-    var user: User?
+    var album: Album?
     private var images = [String]()
     
     // UIViews
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var usernameLabel: UILabel!
-    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var collectionView: UICollectionView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        fetchImageStrings()
     }
     
     // This function fetches images from the JSONPlaceholder API
     func fetchImageStrings() {
-        // TODO: implement this
+        ReactiveApi
+            .request(endpoint: "photos", method: .Get, parameters: ["albumId": album!.id as AnyObject])
+            .startWithResult { (result: Result<[[String:Any]], NetworkError>) in
+                // Check that values were returned
+                if let values = result.value {
+                    // Parse data
+                    for image in values {
+                        let thumnailUrl = image["thumbnailUrl"] as! String
+                        
+                        // Add URL to UICollectionView's data source
+                        self.images.append(thumnailUrl)
+                    }
+                    
+                    // Back on the main thread, reload the UITableView
+                    DispatchQueue.main.async {
+                        self.collectionView.reloadData()
+                    }
+                }
+        }
     }
     
     // MARK: UICollectionView Data Source
